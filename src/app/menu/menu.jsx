@@ -1,6 +1,7 @@
 import React from "react";
+import "./menu.css";
 
-export default function Menu() {
+export default function Menu({ UpdateData }) {
   const data = [
     {
       id: "1",
@@ -14,14 +15,20 @@ export default function Menu() {
   return (
     <div>
       <ul>
-        {data.forEach((element) => {
-          <li>
-            <p>HOla</p>
-          </li>;
-          console.log(element);
+        {data.map((element) => {
+          return (
+            <li key={element.id}>
+              <button
+                className="btn btn-success"
+                onClick={() => {
+                  UpdateData(element.name);
+                }}
+              >
+                {element.name}
+              </button>
+            </li>
+          );
         })}
-        <li>Hola</li>
-        <li>Mundo</li>
       </ul>
     </div>
   );
