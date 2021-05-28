@@ -13,7 +13,7 @@ export default function Menu({ UpdateData }) {
     },
   ];
   return (
-    <div>
+    <div className="Menu">
       <ul>
         {data.map((element) => {
           return (

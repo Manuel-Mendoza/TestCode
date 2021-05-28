@@ -33,3 +33,27 @@ input[type="number"]::-webkit-outer-spin-button {
   z-index: 1;
   transition: all 1s;
 }
+
+@media screen and (min-width: 280px) and (max-width: 920px) {
+  .App {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    height: 100vh;
+  }
+  .Menu {
+    grid-row: 1 / -1;
+  }
+  .Menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh;
+  }
+  form {
+    width: 90% !important;
+  }
+  .message {
+    padding: 0% 5%;
+  }
+}

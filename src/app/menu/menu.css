@@ -1,3 +1,7 @@
+.Menu {
+  background: darkslategray;
+  padding: 0.3%;
+}
 ul {
   display: flex;
   justify-content: space-evenly;
@@ -5,3 +9,4 @@ ul {
 li {
   list-style: none;
 }
+

@@ -10,7 +10,7 @@ export default function App() {
     setDatabse(event);
   };
   return (
-    <section>
+    <section className='App'>
       <Menu UpdateData={UpdateData} />
 
       <center>
